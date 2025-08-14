@@ -1,22 +1,22 @@
-# Como instalar o `kolourpaint` no `Linux Ubuntu`
+# Como instalar o `AGENTS.md` no `Linux Ubuntu`
 
 ## Resumo
 
-Este documento apresenta os passos necessários para instalar o utilitário `kolourpaint` no `Linux Ubuntu`.
+Este documento apresenta os passos necessários para obter o arquivo `AGENTS.md` no `Linux Ubuntu`.
 
 ## _Abstract_
 
-_This document shows the steps required to install the `kolourpaint` utility on `Linux Ubuntu`._
+_This document shows the steps required to obtain the `AGENTS.md` file on `Linux Ubuntu`._
 
 ## Descrição
 
-### `kolourpaint`
+### `AGENTS.md`
 
-O `kolourpaint` é um editor de imagens simples para ambientes `Linux`. Ele oferece ferramentas básicas de desenho, como linhas, formas e preenchimentos, sendo uma alternativa leve ao `Microsoft Paint`.
+O `AGENTS.md` é um arquivo de documentação que reúne diretrizes para agentes que interagem com repositórios Git.
 
-## 1. Instalar o `kolourpaint` no `Linux Ubuntu`
+## 1. Instalar o `AGENTS.md` no `Linux Ubuntu`
 
-Para instalar o `kolourpaint`, siga os passos abaixo:
+Para instalar o `AGENTS.md`, siga os passos abaixo:
 
 1. Abra o `Terminal Emulator`. Você pode fazer isso pressionando: `Ctrl + Alt + T`
 
@@ -62,30 +62,28 @@ Para instalar o `kolourpaint`, siga os passos abaixo:
     sudo apt full-upgrade -y
     ```
 
-3. Instale o `kolourpaint` e verifique a instalação:
+3. Baixe o `AGENTS.md` e verifique seu conteúdo:
     ```bash
-    sudo apt update
-    sudo apt install kolourpaint
-    kolourpaint --version
+    curl -O https://exemplo.com/AGENTS.md
+    cat AGENTS.md
     ```
 
-## 2. Abrir uma imagem existente
+## 2. Abrir o arquivo `AGENTS.md`
 
-Você pode abrir o `kolourpaint` informando um arquivo de imagem:
+Você pode abrir o `AGENTS.md` com um editor de texto, por exemplo:
 ```bash
-kolourpaint ~/Imagens/exemplo.png
+nano AGENTS.md
 ```
-Esse comando abre a interface do programa carregando a imagem `exemplo.png`.
+Esse comando abre a interface do editor carregando o arquivo `AGENTS.md`.
 
-## 3. Usar uma variável de terminal para definir a imagem
+## 3. Usar uma variável de terminal para definir o arquivo
 
-Também é possível definir o caminho em uma variável antes de chamar o `kolourpaint`:
+Também é possível definir o caminho em uma variável antes de abrir o `AGENTS.md`:
 ```bash
-img_path="~/Imagens/exemplo.png"
-kolourpaint "$img_path"
+file_path="AGENTS.md"
+cat "$file_path"
 ```
 
 ## Referências
 
-[1] OPENAI. ***Instalar kolourpaint no Linux Ubuntu***. Disponível em: <https://chatgpt.com/c/68942e26-b7a0-832f-9c96-7c57044cb43a>. ChatGPT. Acessado em: 07/08/2025 05:21.
-
+[1] OPENAI. ***OpenAI Codex Overview***. Disponível em: <https://platform.openai.com/docs/codex/overview>. Acessado em: 14/08/2025 17:44.
