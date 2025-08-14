@@ -7,9 +7,9 @@ Cada agente possui seu próprio arquivo dedicado, que **não é mesclado** aqui,
 
 ## Estrutura
 
-- `docs/agents_git.md` → Instruções e fluxos de trabalho para Git, GitHub e GitLab  
-- `docs/agents_latex.md` → Instruções e padrões para documentos LaTeX  
-- `docs/agents_python.md` → Instruções para Python, PEP8, Sphinx e formatação de código
+- `docs/AGENTS_git.md` → Instruções e fluxos de trabalho para Git, GitHub e GitLab  
+- `docs/AGENTS_latex.md` → Instruções e padrões para documentos LaTeX  
+- `docs/AGENTS_python.md` → Instruções para Python, PEP8, Sphinx e formatação de código
 
 ---
 
@@ -24,9 +24,9 @@ No **ChatGPT Codex** (ou outra instância), você pode pedir para o modelo consi
 
 ## Leitura para Instruções Externas
 
-- [agents_git.md](docs/agents_git.md)  
-- [agents_latex.md](docs/agents_latex.md)  
-- [agents_python.md](docs/agents_python.md)
+- [AGENTS_git.md](docs/AGENTS_git.md)  
+- [AGENTS_latex.md](docs/AGENTS_latex.md)  
+- [AGENTS_python.md](docs/AGENTS_python.md)
 
 ---
 
