@@ -87,3 +87,4 @@ cat "$file_path"
 ## Referências
 
 [1] OPENAI. ***OpenAI Codex Overview***. Disponível em: <https://platform.openai.com/docs/codex/overview>. Acessado em: 14/08/2025 17:44.
+
