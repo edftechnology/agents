@@ -1,31 +1,21 @@
-# Instruções Gerais
+# Instruções do Projeto
 
-* O usuário irá fornecer uma tarefa.
-* A tarefa envolve trabalhar com repositórios Git no diretório atual.
-* Aguarde a conclusão dos comandos de terminal antes de finalizar.
+Estas diretrizes seguem o padrão do Codex da OpenAI.
 
 ## Git
+- Não crie novos branches.
+- Faça commits com mensagens claras.
+- Verifique `git status` para garantir que a árvore de trabalho esteja limpa.
 
-* Não crie novos branches.
-* Use o Git para commitar suas alterações.
-* Se o *pre-commit* falhar, corrija os problemas e tente novamente.
-* Verifique `git status` para confirmar que a *worktree* está limpa.
-* Não modifique *commits* existentes.
+## Verificações
+- Após atualizar `README.ipynb`, execute `python convert_ipynb_to_md_and_py.py`.
 
-## Especificação de `AGENTS.md`
+## Citações
+- Cite trechos de arquivos usando `【F:caminho†Lx-Ly】`.
+- Cite saídas de terminal usando `【id†Lx-Ly】`.
 
-* Repositórios podem conter arquivos `AGENTS.md`.
-* As instruções valem para todo o diretório abaixo do arquivo.
-* Arquivos `AGENTS.md` mais profundos têm precedência.
-* Instruções de sistema, desenvolvedor e usuário prevalecem sobre este arquivo.
-* Execute as verificações programáticas indicadas.
+## Estilo
+- Utilize português brasileiro em textos e comentários.
 
-## Instruções de Citação
-
-* Cite trechos de arquivos usando `【F:<caminho>†L<linha_inicial>(-L<linha_final>)?】`.
-* Cite saídas de terminal usando `【<chunk_id>†L<linha_inicial>(-L<linha_final>)?】`.
-* Prefira citações de arquivos.
-
-## Estilo e Idioma
-
-* Utilize português brasileiro em textos e comentários.
+## Referência
+- <https://platform.openai.com/docs/codex/overview>
