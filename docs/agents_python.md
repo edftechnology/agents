@@ -25,8 +25,8 @@ grep -R "if __name__ == '__main__':" .
 
 ### Encontrar classes e funções principais
 ```bash
-grep -R "class " src/ | cut -d: -f1 | sort -u
-grep -R "def " src/ | cut -d: -f1 | sort -u
+grep -R "class " src/ script/ scripts/ 2>/dev/null | cut -d: -f1 | sort -u
+grep -R "def " src/ script/ scripts/ 2>/dev/null | cut -d: -f1 | sort -u
 ```
 
 ### Listagem de dependências por importância
@@ -43,33 +43,31 @@ grep -A 20 "^\[tool.poetry.dependencies\]" pyproject.toml
 ### Criar mapa de chamadas de funções
 ```bash
 pip install pycallgraph
-pycallgraph graphviz -- ./src/main.py
+pycallgraph graphviz -- ./src/main.py ./script/main.py ./scripts/main.py 2>/dev/nul
 ```
 
 ### Criar grafo de dependências entre módulos
 ```bash
 pip install pydeps
-pydeps src/ --show-deps --max-bacon=2 --output=deps.svg
+pydeps src/ script/ scripts/ --show-deps --max-bacon=2 --output=deps.svg
 ```
 
 ### Detectar funções não utilizadas
 ```bash
 pip install vulture
-vulture src/
+vulture src/ script/ scripts/
 ```
 
 ### Encontrar imports quebrados ou não utilizados
 ```bash
 pip install autoflake
-autoflake --remove-all-unused-imports --check --recursive src/
-```
-
+autoflake --remove-all-unused-imports --check --recursive src/ script/ scripts/
+``
 ### Localizar pontos críticos de complexidade
 ```bash
 pip install radon
-radon cc src/ -s -a
-```
-
+radon cc src/ script/ scripts/ -s -a
+``
 ---
 
 ## Configuração do Ambiente
