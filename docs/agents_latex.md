@@ -65,6 +65,21 @@ latexmk -c
 - Centralizar definições de macros e comandos em um único arquivo (`macros.tex`).
 - Pacotes essenciais devem ser carregados no preâmbulo principal (`main.tex` ou equivalente).
 - Evitar redefinir comandos padrão sem justificativa.
+- Todo arquivo `.tex` deve conter `\input{variables.tex}` imediatamente após `\input{preamble.tex}`.
+
+
+### Template Base de Arquivo
+Todo arquivo `.tex` deve iniciar com a seguinte estrutura mínima:
+```tex
+\documentclass[12pt, a4paper]{article} % Tamanho de letra 12, papel A4, Estilo de artigo
+
+\input{preamble.tex}
+\input{variables.tex}
+
+\begin{document}
+	
+\end{document}
+```
 
 ---
 
