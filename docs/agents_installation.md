@@ -17,9 +17,7 @@ O agente deve:
 ### 1. Pesquisar instruções no ChatGPT
 - Criar uma pergunta no ChatGPT do tipo:  
   *"Como instalar o <nome_do_projeto/repositório> no Linux Ubuntu?"*  
-- Copiar o link da resposta do ChatGPT para incluir na seção **Referências** do arquivo `README.ipynb`.  
-- Se possível, usar diretamente este link já validado:  
-  [https://chatgpt.com/c/68caf85f-68f4-8333-b831-cd01d4ab7e3e](https://chatgpt.com/c/68caf85f-68f4-8333-b831-cd01d4ab7e3e)
+- Copiar o link da resposta do ChatGPT para incluir na seção **Referências** do arquivo `README.ipynb`.
 
 ---
 
