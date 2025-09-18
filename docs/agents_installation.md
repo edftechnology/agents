@@ -26,6 +26,9 @@ O agente deve:
 - Não alterar os arquivos `README.md` e `README.py`.
 - Preservar integralmente a seção:  
   **"2. Certifique-se de que seu sistema esteja limpo e atualizado."**
+- Revisar também os documentos-padrão do projeto:
+  - CHANGES.txt
+  - setup.py
 
 ---
 
@@ -36,3 +39,4 @@ O agente deve:
 python3 convert_ipynb_to_md_and_py.py
 ```
 - Caso você não encontre o arquivo `python3 convert_ipynb_to_md_and_py.py`, este converte o `README.ipynb` para `.md`. Sendo assim, se não encontrar o arquivo, faça você mesmo.
+- Excluir o arquivo `README.py`, pois este não deve existir.
