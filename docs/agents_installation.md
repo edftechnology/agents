@@ -16,13 +16,13 @@ O agente deve:
 
 ### 1. Pesquisar instruções no ChatGPT
 - Criar uma pergunta no ChatGPT do tipo:  
-  *"Como instalar o <nome_do_projeto/repositório> no Linux Ubuntu?"*  
+  *"Como instalar o <nome_do_projeto/repositório> (sem os underlines `_`) no Linux Ubuntu?"*  
 - Copiar o link da resposta do ChatGPT para incluir na seção **Referências** do arquivo `README.ipynb`.
 
 ---
 
 ### 2. Revisar o Projeto
-- Revisar todos os arquivos do projeto e alterar o nome do programa para **<nome_do_projeto/repo>** conforme descrito na pesquisa/documentação.
+- Revisar todos os arquivos do projeto e alterar o nome do programa para **<nome_do_projeto/repo>** (sem os underlines `_`) conforme descrito na pesquisa/documentação.
 - Não alterar os arquivos `README.md` e `README.py`.
 - Preservar integralmente a seção:  
   **"2. Certifique-se de que seu sistema esteja limpo e atualizado."**
