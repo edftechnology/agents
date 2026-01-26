@@ -24,11 +24,11 @@ No **ChatGPT Codex** (ou outra instância), você pode pedir para o modelo consi
 
 ## Leitura para Instruções Externas
 
-- [agents_git.md](docs/agents_git.md)  
-- [agents_github_actions.md](docs/agents_github_actions.md)  
-- [agents_latex.md](docs/agents_latex.md)  
-- [agents_python.md](docs/agents_python.md)
-- [agents_shell.md](docs/agents_shell.md)
+- [agents_git.md](subs/submodules/agents_git.md)  
+- [agents_github_actions.md](subs/submodules/agents_github_actions.md)  
+- [agents_latex.md](subs/submodules/agents_latex.md)  
+- [agents_python.md](subs/submodules/agents_python.md)
+- [agents_shell.md](subs/submodules/agents_shell.md)
 
 ---
 
