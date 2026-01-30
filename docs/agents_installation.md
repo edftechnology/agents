@@ -40,3 +40,18 @@ python3 convert_ipynb_to_md_and_py.py
 ```
 - Caso você não encontre o arquivo `python3 convert_ipynb_to_md_and_py.py`, este converte o `README.ipynb` para `.md`. Sendo assim, se não encontrar o arquivo, faça você mesmo.
 - Excluir o arquivo `README.py`, pois este não deve existir.
+
+---
+
+### 4. Acertar código
+- Para os repos que possuírem o `README.ipynb`, onde estiver:
+ 
+  1. Abra o `Terminal Emulator`. Você pode fazer isso pressionando:`Ctrl + Alt + T`
+ 
+  Alterar para:
+ 
+  1. Abra o `Terminal Emulator`. Você pode fazer isso pressionando:
+ 
+      ```bash
+      Ctrl + Alt + T
+      ```
