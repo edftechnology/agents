@@ -1,0 +1,123 @@
+# agents_installation.md
+
+## Missão do Agente
+
+	Você é responsável por criar, modificar e manter instruções de instalação de programas no `Linux Ubuntu`, garantindo clareza, reprodutibilidade e segurança no processo.
+
+	O agente deve:
+
+	- Criar tutoriais passo a passo de instalação via **Terminal Emulator**.
+
+	- Usar comandos portáteis e compatíveis com diferentes versões do `Linux Ubuntu`.
+
+	- Verificar dependências e pacotes adicionais necessários.
+
+	- Documentar _links_ oficiais e fontes de referência.
+
+	- Registrar _links_ de consultas ao `ChatGPT` e outras fontes em **Referências**.
+
+	- Manter o _template_ do `README.ipynb`
+
+---
+
+## Procedimento de Exploração
+
+### 1. Pesquisar instruções no `ChatGPT`
+
+	- Criar uma pergunta no `ChatGPT` do tipo:  
+	  *"Como instalar o <nome_do_projeto/repositório> (sem os underlines `_`) no `Linux Ubuntu` pelo `Terminal Emulator`?"*  
+
+	- Copiar o _link+ da resposta do `ChatGPT` para incluir na seção **Referências** do arquivo `README.ipynb`.
+
+---
+
+### 2. Revisar o Projeto
+
+	- Revisar todos os arquivos do projeto e alterar o nome do programa para **<nome_do_projeto/repo>** (sem os underlines `_`) conforme descrito na pesquisa/documentação.
+
+	- Não alterar os arquivos `README.md` e `README.py` usando o código em `python` chamado `convert_ipynb_to_md.py`.
+
+	- Preservar integralmente a seção: `**"2. Certifique-se de que seu sistema esteja limpo e atualizado."**`
+
+	- Revisar também os documentos-padrão do projeto:
+	  
+		- CHANGES.txt
+	  
+	  	- setup.py
+
+	- Manter o português com acentos, conforme as regras gramaticais.
+
+---
+
+### 3. Executar Conversão
+
+	- Rodar o _script_ de conversão para sincronizar os arquivos:
+
+	    ```bash
+	    python3 subs/submodules/python_scripts/convert_ipynb_to_md.py
+	    ```
+	- Caso você não encontre o arquivo `python3 convert_ipynb_to_md.py`, este converte o `README.ipynb` para `.md`. Sendo assim, se não encontrar o arquivo, faça você mesmo.
+
+	- Excluir o arquivo `README.py`, pois este não deve existir, caso ele exista.
+
+---
+
+### 4. Acertar código
+
+	- Para os repos que possuírem o `README.ipynb`, onde estiver:
+	 
+	    1. Abra o `Terminal Emulator`. Você pode fazer isso pressionando: `Ctrl + Alt + T`
+	 
+	    Alterar para:
+	 
+	    1. Abrir o `Terminal Emulator`. Você pode fazer isso pressionando:
+	  
+		```bash
+		Ctrl + Alt + T
+		```
+
+	- Sempre manter essa Seção, mesmo que ela não seja útil, pois serve para a maior parte das instalações:
+
+		2. Certifique-se de que seu sistema esteja limpo e atualizado.
+
+		    2.1 Limpar o `cache` do gerenciador de pacotes `apt`. Especificamente, ele remove todos os arquivos de pacotes (`.deb`) baixados pelo `apt` e armazenados em `/var/cache/apt/archives/`. Digite o seguinte comando:
+		    ```bash
+		    sudo apt clean
+		    ```
+
+		    2.2 Remover pacotes `.deb` antigos ou duplicados do `cache` local. É útil para liberar espaço, pois remove apenas os pacotes que não podem mais ser baixados (ou seja, versões antigas de pacotes que foram atualizados). Digite o seguinte comando:
+		    ```bash
+		    sudo apt autoclean
+		    ```
+
+		    2.3 Remover pacotes que foram automaticamente instalados para satisfazer as dependências de outros pacotes e que não são mais necessários. Digite o seguinte comando:
+		    ```bash
+		    sudo apt autoremove -y
+		    ```
+
+		    2.4 Buscar as atualizações disponíveis para os pacotes que estão instalados em seu sistema. Digite o seguinte comando e pressione `Enter`:
+		    ```bash
+		    sudo apt update
+		    ```
+
+		    2.5 **Corrigir pacotes quebrados**: Isso atualizará a lista de pacotes disponíveis e tentará corrigir pacotes quebrados ou com dependências ausentes:
+		    ```bash
+		    sudo apt --fix-broken install
+		    ```
+
+		    2.6 Limpar o `cache` do gerenciador de pacotes `apt` novamente:
+		    ```bash
+		    sudo apt clean
+		    ```
+
+		    2.7 Para ver a lista de pacotes a serem atualizados, digite o seguinte comando e pressione `Enter`:
+		    ```bash
+		    sudo apt list --upgradable
+		    ```
+
+		    2.8 Realmente atualizar os pacotes instalados para as suas versões mais recentes, com base na última vez que você executou `sudo apt update`. Digite o seguinte comando e pressione `Enter`:
+		    ```bash
+		    sudo apt full-upgrade -y
+		    ```
+
+

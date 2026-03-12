@@ -18,7 +18,7 @@ O `AGENTS.md` é um arquivo de documentação que reúne diretrizes para agentes
 
 Para instalar o `AGENTS.md`, siga os passos abaixo:
 
-1. Abra o `Terminal Emulator`. Você pode fazer isso pressionando: `Ctrl + Alt + T`
+1. Abrir o `Terminal Emulator`. Você pode fazer isso pressionando: `Ctrl + Alt + T`
 
 2. Certifique-se de que seu sistema esteja limpo e atualizado.
 
