@@ -18,6 +18,11 @@ Cada agente possui seu próprio arquivo dedicado, que **não é mesclado** aqui,
 - Use `--source-data-file`, `--source-sheet-name` e `--source-csv-separator`
   para associar resultados processados à tabela original.
 - Evite nomes diferentes para o mesmo conceito entre programas relacionados.
+- Mantenha saídas de `Terminal Emulator`/`stdout` em inglês dos EUA, mesmo com
+  `--lang pt-br`.
+- Em relatórios tabulares impressos no terminal, use quatro casas decimais para
+  valores numéricos; traduza para português brasileiro apenas os arquivos
+  salvos quando `--lang pt-br` estiver ativo.
 
 ---
 
