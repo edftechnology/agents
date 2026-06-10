@@ -80,3 +80,10 @@ VBoxManage snapshot "NomeVM" take "snapshot_nome"
 ## Referências
 - VirtualBox Manual: https://www.virtualbox.org/manual/  
 - Libvirt Documentation: https://libvirt.org/docs.html  
+
+## File naming policy
+
+- File names must be written in English.
+- Use only underscores (`_`) to separate words in file names; do not use hyphens (`-`), spaces, or other separators.
+
+- Keep mandatory ecosystem names such as `AGENTS.md`, `GEMINI.md`, and `README.md` when a tool or platform requires the conventional name.

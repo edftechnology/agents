@@ -76,3 +76,10 @@ grep -E '(^[a-zA-Z0-9_]+=\$|^[[:space:]]*[a-zA-Z0-9_-]+ )' script.sh
 ## Referências
 - GNU Bash Manual: https://www.gnu.org/software/bash/manual/  
 - ShellCheck: https://www.shellcheck.net/  
+
+## File naming policy
+
+- File names must be written in English.
+- Use only underscores (`_`) to separate words in file names; do not use hyphens (`-`), spaces, or other separators.
+
+- Keep mandatory ecosystem names such as `AGENTS.md`, `GEMINI.md`, and `README.md` when a tool or platform requires the conventional name.

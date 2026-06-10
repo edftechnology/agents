@@ -79,3 +79,10 @@ rclone check /caminho/local remote:nome_pasta
 ## Referências
 - Rclone Documentation: https://rclone.org/docs/  
 - Rclone Config: https://rclone.org/docs/#configuration  
+
+## File naming policy
+
+- File names must be written in English.
+- Use only underscores (`_`) to separate words in file names; do not use hyphens (`-`), spaces, or other separators.
+
+- Keep mandatory ecosystem names such as `AGENTS.md`, `GEMINI.md`, and `README.md` when a tool or platform requires the conventional name.

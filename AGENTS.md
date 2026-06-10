@@ -34,3 +34,10 @@ No **ChatGPT Codex** (ou outra instância), você pode pedir para o modelo consi
 
 > **Nota:** Cada arquivo é independente e pode ser atualizado separadamente.  
 > O `AGENTS.md` serve apenas como guia/índice mestre.
+
+## File naming policy
+
+- File names must be written in English.
+- Use only underscores (`_`) to separate words in file names; do not use hyphens (`-`), spaces, or other separators.
+
+- Keep mandatory ecosystem names such as `AGENTS.md`, `GEMINI.md`, and `README.md` when a tool or platform requires the conventional name.
