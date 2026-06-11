@@ -63,6 +63,8 @@ latexmk -c
 - Utilizar codificação UTF-8.
 - Seguir padrão de nomenclatura de arquivos em minúsculas e com underscore (`_`).
 - Centralizar definições de macros e comandos em um único arquivo (`macros.tex`).
+- **NUNCA** use a estrutura `\ifdefined\mainfile`.
+- Nomes de funções e variáveis devem ser **SEMPRE** em inglês (EUA).
 - Pacotes essenciais devem ser carregados no preâmbulo principal (`main.tex` ou equivalente).
 - Evitar redefinir comandos padrão sem justificativa.
 - Todo arquivo `.tex` deve conter `\input{variables.tex}` imediatamente após `\input{preamble.tex}`.

@@ -94,7 +94,7 @@ poetry install
   ```bash
   flake8 .
   ```
-- Nomes em inglês, descritivos.
+- Nomes de funções, variáveis e identificadores devem ser **SEMPRE** em inglês (EUA).
 - Docstrings no formato Sphinx.
 
 ---

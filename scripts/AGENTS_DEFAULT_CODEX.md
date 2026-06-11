@@ -5,6 +5,13 @@ Cada agente possui seu próprio arquivo dedicado, que **não é mesclado** aqui,
 
 ---
 
+## Regras Mandatórias
+
+- **LaTeX**: **NUNCA** use a estrutura `\ifdefined\mainfile`. Todos os arquivos `.tex` devem seguir o template padrão com `\documentclass`, `\input{preamble.tex}`, `\input{variables.tex}`, `\begin{document}` e `\end{document}`.
+- **Identificadores**: Nomes de funções, variáveis e identificadores devem ser **SEMPRE** em inglês (EUA).
+
+---
+
 ## Estrutura
 
 - `docs/AGENTS_git.md` → Instruções e fluxos de trabalho para Git, GitHub e GitLab  
