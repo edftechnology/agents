@@ -68,6 +68,13 @@ latexmk -c
 - Pacotes essenciais devem ser carregados no preâmbulo principal (`main.tex` ou equivalente).
 - Evitar redefinir comandos padrão sem justificativa.
 - Todo arquivo `.tex` deve conter `\input{variables.tex}` imediatamente após `\input{preamble.tex}`.
+- Ao escrever ou editar código LaTeX, usar a indentação hierárquica já adotada no projeto:
+  aplicar tabulação para refletir a estrutura do documento, por exemplo em
+  `document`, `section`, `subsection`, `subsubsection` e ambientes como `itemize`,
+  `enumerate`, `figure` e `table`.
+- Não apenas preservar a indentação existente:
+  novos trechos gerados pelo agente também devem seguir esse padrão de recuo.
+- Não achatar a formatação nem reindentar em estilo diferente sem necessidade.
 
 
 ### Template Base de Arquivo
@@ -104,6 +111,29 @@ project/
 - Evitar warnings como "Overfull hbox" e "Undefined references".
 - Conferir sumário, listas de figuras e tabelas após cada modificação.
 - Garantir que todas as referências `\ref{}` e `\cite{}` possuam destino válido.
+
+---
+
+## README.ipynb e README.md
+- Em `README.ipynb` e `README.md`, formatar as referências em múltiplas linhas para facilitar leitura e edição.
+- Não condensar autor, título, disponibilidade, fonte e data de acesso em uma única linha.
+- Usar o padrão abaixo:
+
+```markdown
+## Referências
+
+[1] OPENAI.
+**Converter vários README.ipynb para .md e .py**. 
+Disponível em: <https://chat.openai.com/c/50f64d4d-cfe7-40ac-a8aa-27ffa4eb5a5e>.
+ChatGPT.
+Acessado em: 26/01/2024.
+
+[2] INSTITUTO TECNOLÓGICO DE AERONÁUTICA (ITA).
+**Exemplo de utilização da classe ITA**.
+Disponível em: <http://www.apgita.org.br/apgita/teses-e-latex.php>.
+ITA.
+Acessado em: 25/08/2016.
+```
 
 ---
 
@@ -149,3 +179,10 @@ project/
 ## Referências
 - LATEX Project: https://www.latex-project.org/  
 - Overleaf LaTeX Guides: https://www.overleaf.com/learn  
+
+## File naming policy
+
+- File names must be written in English.
+- Use only underscores (`_`) to separate words in file names; do not use hyphens (`-`), spaces, or other separators.
+
+- Keep mandatory ecosystem names such as `AGENTS.md`, `GEMINI.md`, and `README.md` when a tool or platform requires the conventional name.

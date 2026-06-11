@@ -79,3 +79,10 @@ postsuper -d ALL
 ## Referências
 - Postfix Documentation: http://www.postfix.org/documentation.html  
 - Arch Wiki Postfix: https://wiki.archlinux.org/title/Postfix  
+
+## File naming policy
+
+- File names must be written in English.
+- Use only underscores (`_`) to separate words in file names; do not use hyphens (`-`), spaces, or other separators.
+
+- Keep mandatory ecosystem names such as `AGENTS.md`, `GEMINI.md`, and `README.md` when a tool or platform requires the conventional name.

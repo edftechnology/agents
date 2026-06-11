@@ -68,3 +68,10 @@ Na interface do TeamViewer:
 ## Referências
 - TeamViewer Documentation: https://www.teamviewer.com/en/docs/  
 - Secure TeamViewer Guide: https://community.teamviewer.com/  
+
+## File naming policy
+
+- File names must be written in English.
+- Use only underscores (`_`) to separate words in file names; do not use hyphens (`-`), spaces, or other separators.
+
+- Keep mandatory ecosystem names such as `AGENTS.md`, `GEMINI.md`, and `README.md` when a tool or platform requires the conventional name.

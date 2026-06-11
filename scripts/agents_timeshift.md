@@ -70,3 +70,10 @@ sudo timeshift --setup
 ## Referências
 - Timeshift Documentation: https://teejeetech.com/timeshift/  
 - Linux Mint Timeshift Guide: https://linuxmint-installation-guide.readthedocs.io/en/latest/timeshift.html  
+
+## File naming policy
+
+- File names must be written in English.
+- Use only underscores (`_`) to separate words in file names; do not use hyphens (`-`), spaces, or other separators.
+
+- Keep mandatory ecosystem names such as `AGENTS.md`, `GEMINI.md`, and `README.md` when a tool or platform requires the conventional name.

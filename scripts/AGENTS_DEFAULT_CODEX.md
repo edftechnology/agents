@@ -18,6 +18,19 @@ Cada agente possui seu próprio arquivo dedicado, que **não é mesclado** aqui,
 - `docs/AGENTS_latex.md` → Instruções e padrões para documentos LaTeX  
 - `docs/AGENTS_python.md` → Instruções para Python, PEP8, Sphinx e formatação de código
 
+## Padronização de CLIs entre apps
+
+- Prefira `--data-file` para o arquivo de dados principal em apps e workflows.
+- Preserve aliases legados, como `--uploaded_full_path`, quando já houver uso.
+- Use `--source-data-file`, `--source-sheet-name` e `--source-csv-separator`
+  para associar resultados processados à tabela original.
+- Evite nomes diferentes para o mesmo conceito entre programas relacionados.
+- Mantenha saídas de `Terminal Emulator`/`stdout` em inglês dos EUA, mesmo com
+  `--lang pt-br`.
+- Em relatórios tabulares impressos no terminal, use quatro casas decimais para
+  valores numéricos; traduza para português brasileiro apenas os arquivos
+  salvos quando `--lang pt-br` estiver ativo.
+
 ---
 
 ## Como usar no ChatGPT Codex
@@ -39,3 +52,10 @@ No **ChatGPT Codex** (ou outra instância), você pode pedir para o modelo consi
 
 > **Nota:** Cada arquivo é independente e pode ser atualizado separadamente.  
 > O `AGENTS.md` serve apenas como guia/índice mestre.
+
+## File naming policy
+
+- File names must be written in English.
+- Use only underscores (`_`) to separate words in file names; do not use hyphens (`-`), spaces, or other separators.
+
+- Keep mandatory ecosystem names such as `AGENTS.md`, `GEMINI.md`, and `README.md` when a tool or platform requires the conventional name.
