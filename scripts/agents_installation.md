@@ -261,6 +261,8 @@ Sempre incluir no `README.ipynb` uma seção com este título:
 ## 1.1 Código completo para configurar/instalar/usar
 ```
 
+- A escrita dentro do `README.ipynb` e do `README.md` deve seguir `pep8` e `pep257`.
+
 <div style="margin-left: 2em;">
 
 Quando houver um bloco único de copiar e colar para configurar/instalar/usar o programa sem precisar digitar linha por linha, usar este formato:
