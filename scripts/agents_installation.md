@@ -57,6 +57,8 @@ O agente deve:
 
 ### 2. Revisar o Projeto
 
+- As alterações, revisões e demais ajustes devem ser feitos na branch `main`.
+
 - Revisar todos os arquivos do projeto e alterar o nome do programa para **<nome_do_projeto/repo>** (sem os underlines `_`) conforme descrito na pesquisa/documentação.
 
 - Essa revisão deve cobrir **todo o repositório**, e não apenas o `README.ipynb`, para identificar nomes antigos, exemplos herdados de outros projetos e referências residuais incorretas.
@@ -341,7 +343,6 @@ Quando os passos do item `2` forem complexos demais para ter um bloco único de 
     NÃO há.
     ```
 ```
-
 ## File naming policy
 
 - File names must be written in English.
