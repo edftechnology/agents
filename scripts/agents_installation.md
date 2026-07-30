@@ -24,6 +24,16 @@ O agente deve:
 
 - Manter o _template_ do `README.ipynb`
 
+- Quando o projeto envolver modelos, automações analíticas, dados críticos ou contexto regulado, incluir uma seção enxuta de governança documental no `README.ipynb`, sem transformar o `README` em relatório técnico completo.
+
+- Essa seção deve cobrir, quando aplicável: objetivo e uso previsto, escopo, responsáveis, versões do ambiente tecnológico, fontes de dados, premissas, limitações, testes, monitoramento, riscos operacionais, plano de contingência e histórico de revisão.
+
+- Sempre que houver tabelas de versões em documentos técnicos do projeto, preservar esse padrão no `README.ipynb` com colunas como `Componente`, `Versão/Comando` e `Observação`.
+
+- Para projetos com modelos ou não-modelos, observar a estrutura mínima de documentação: relatório metodológico, ambiente tecnológico, fonte de dados, plano de testes, resultados/performance, estabilidade, risco operacional, manual de uso/monitoramento e códigos de extração, execução e monitoramento quando existirem.
+
+- Quando houver aprovações, revisões ou alçadas, registrar somente o necessário para rastreabilidade no `README.ipynb`; detalhes completos devem ficar em documentação específica do projeto.
+
 - Palavras estrangeiras em relação ao português brasileiro devem ser escritas em itálico, por exemplo: `_software_`.
 
 - Manter o português com acentos, conforme as regras gramaticais.
